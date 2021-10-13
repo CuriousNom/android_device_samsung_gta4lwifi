@@ -42,6 +42,10 @@ WITH_DEXPREOPT_DEBUG_INFO := false
 PRODUCT_PACKAGES += \
     init.gta4lwifi.rc
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.4.vendor
+
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
