@@ -25,6 +25,12 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.bootanim.set_orientation_4630946474265338241=ORIENTATION_90
 
+# Dex preopt
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Launcher3QuickStep \
+    SettingsGoogle \
+    SystemUIGoogle
+
 # Device init scripts
 PRODUCT_PACKAGES += \
     init.gta4lwifi.rc
