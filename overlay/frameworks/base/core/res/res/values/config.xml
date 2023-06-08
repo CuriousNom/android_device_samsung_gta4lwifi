@@ -31,6 +31,12 @@
          device is data-only. -->
     <bool name="config_voice_capable">false</bool>
 
+    <!-- Flag indicating whether the surface flinger has limited
+         alpha compositing functionality in hardware.  If set, the window
+         manager will disable alpha trasformation in animations where not
+         strictly needed. -->
+    <bool name="config_sf_limitedAlpha">true</bool>
+
     <!-- Flag indicating whether the current device allows sms service.
          If true, this means that the device supports both sending and
          receiving sms via the telephony network.
