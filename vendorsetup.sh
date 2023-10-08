@@ -3,7 +3,6 @@ git clone --depth=1 https://github.com/Matrixx-Devices/android_vendor_samsung_gt
 git clone --depth=1 https://github.com/Matrixx-Devices/android_vendor_samsung_gta4l-common vendor/samsung/gta4l-common
 
 # Cloning necessary repository
-git clone --depth=1 https://github.com/Matrixx-Devices/android_device_samsung_gta4l-common device/samsung/gta4l-common
 git clone --depth=1 https://github.com/Matrixx-Devices/android_hardware_samsung hardware/tmp
 cp -r hardware/tmp/* hardware/samsung/
 rm -rf hardware/tmp
