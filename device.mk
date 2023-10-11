@@ -42,5 +42,8 @@ WITH_DEXPREOPT_DEBUG_INFO := false
 PRODUCT_PACKAGES += \
     init.gta4lwifi.rc
 
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Inherit from gta4l-common
 $(call inherit-product, device/samsung/gta4l-common/gta4l.mk)
