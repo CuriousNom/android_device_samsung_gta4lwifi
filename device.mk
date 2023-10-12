@@ -269,6 +269,10 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Rotation
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.bootanim.set_orientation_4630946474265338241=ORIENTATION_90
