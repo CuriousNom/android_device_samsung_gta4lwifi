@@ -36,7 +36,7 @@ $(WLANMDSP_DUMMY_FILE): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(WLANMDSP_DUMMY_FILE)
 
-ifneq ($(filter gta4l,$(TARGET_DEVICE)),)
+ifneq ($(filter gta4l gta4lwifi,$(TARGET_DEVICE)),)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
