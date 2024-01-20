@@ -17,6 +17,10 @@
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/samsung/gta4lwifi/gta4lwifi-vendor.mk)
 
+# ART lowmem config
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.config.art_lowmem=true
+
 # Local overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
