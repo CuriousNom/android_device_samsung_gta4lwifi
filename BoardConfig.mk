@@ -23,6 +23,9 @@ TARGET_OTA_ASSERT_DEVICE := gta4l
 TARGET_BOARD_NAME := P85943DA1
 TARGET_BOOTIMAGE_BOARD_NAME := SRPTC24A006
 
+# Camera
+$(call soong_config_set,samsungCameraVars,needs_sec_reserved_field,true)
+
 # Dexpreopt
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)
