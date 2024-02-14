@@ -4,7 +4,6 @@ git clone --depth=1 https://github.com/CuriousNom/proprius_vendor_samsung_gta4l-
 
 # Cloning necessary repository
 git clone --depth=1 https://github.com/CuriousNom/proprius_device_samsung_gta4l-common.git device/samsung/gta4l-common
-rm -rf hardware/samsung
 git clone --depth=1 https://github.com/LineageOS/android_hardware_samsung.git -b lineage-21 hardware/samsung
 
 # Cloning kernel repositories
