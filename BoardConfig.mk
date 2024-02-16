@@ -19,7 +19,7 @@
 DEVICE_PATH := device/samsung/gta4lwifi
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := gta4lwifi
+TARGET_OTA_ASSERT_DEVICE := gta4l
 
 # Board
 TARGET_BOARD_NAME := P85943DA1
