@@ -4,13 +4,16 @@ git clone --depth=1 https://github.com/CuriousNom/proprius_vendor_samsung_gta4l-
 
 # Cloning necessary repository
 git clone --depth=1 https://github.com/CuriousNom/proprius_device_samsung_gta4l-common.git device/samsung/gta4l-common
-git clone --depth=1 https://github.com/LineageOS/android_hardware_samsung.git -b lineage-21 hardware/samsung
+git clone --depth=1 https://github.com/LineageOS/android_hardware_samsung.git hardware/tmp
+cp -r hardware/tmp/* hardware/samsung/
+rm -rf hardware/tmp
 
 # Cloning kernel repositories
 git clone --depth=1 https://github.com/CuriousNom/kernel_samsung_gta4l.git -b 14.0-ksu kernel/samsung/sm6115
 
 # Update KSU Targets
 cd kernel/samsung/sm6115
+rm -rf KernelSU
 git submodule sync
 git submodule update --init --recursive
 cd KernelSU
