@@ -25,7 +25,7 @@ $(call inherit-product, device/samsung/gta4lwifi/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Matrixx
-MATRIXX_BUILD_TYPE := Unofficial
+MATRIXX_BUILD_TYPE := Official
 MATRIXX_MAINTAINER := Aryan
 MATRIXX_CHIPSET := SM6115
 MATRIXX_BATTERY := 7040mAh
