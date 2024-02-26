@@ -3,6 +3,9 @@ git clone --depth=1 https://github.com/Matrixx-Devices/android_vendor_samsung_gt
 
 # Cloning necessary repository
 git clone --depth=1 https://github.com/Matrixx-Devices/android_hardware_samsung hardware/tmp
+cd hardware/tmp
+rm -rf AdvancedDisplay && rm -rf doze
+cd ../..
 cp -r hardware/tmp/* hardware/samsung/
 rm -rf hardware/tmp
 
