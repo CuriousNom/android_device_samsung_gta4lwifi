@@ -30,7 +30,7 @@ MATRIXX_MAINTAINER := Aryan
 MATRIXX_CHIPSET := SM6115
 MATRIXX_BATTERY := 7040mAh
 MATRIXX_DISPLAY := 1200x2000
-WITH_GMS := true
+WITH_GMS := false
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := gta4lwifi
