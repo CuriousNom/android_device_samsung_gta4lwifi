@@ -36,10 +36,6 @@ $(WLANMDSP_DUMMY_FILE): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(WLANMDSP_DUMMY_FILE)
 
-ifneq ($(filter gta4l gta4lwifi,$(TARGET_DEVICE)),)
-
-include $(call all-makefiles-under,$(LOCAL_PATH))
-
 DSP_MOUNT_POINT := $(TARGET_OUT_VENDOR)/dsp
 $(DSP_MOUNT_POINT): $(LOCAL_INSTALLED_MODULE)
 	@echo "Creating DSP folder: $@"
