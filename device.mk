@@ -97,9 +97,6 @@ PRODUCT_PACKAGES += \
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# Inherit from gta4l-common
-$(call inherit-product, device/samsung/gta4l-common/gta4l.mk)
-
 # Shipping API level
 BOARD_API_LEVEL := 30
 BOARD_SHIPPING_API_LEVEL := 30
@@ -109,9 +106,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-
-# Get non-open-source specific aspects
-$(call inherit-product, vendor/samsung/gta4l-common/gta4l-common-vendor.mk)
 
 PRODUCT_CHARACTERISTICS := tablet
 
