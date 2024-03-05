@@ -21,20 +21,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 # Inherit from gta4lwifi device
 $(call inherit-product, device/samsung/gta4lwifi/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Blaze stuff.
+$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
-# Matrixx
-MATRIXX_BUILD_TYPE := Official
-MATRIXX_MAINTAINER := Aryan
-MATRIXX_CHIPSET := SM6115
-MATRIXX_BATTERY := 7040mAh
-MATRIXX_DISPLAY := 1200x2000
-WITH_GMS := false
+TARGET_BOOT_ANIMATION_RES := 1080
+BLAZE_BUILD_TYPE := UNOFFICIAL
+BLAZE_MAINTAINER := Aryan
+WITH_GAPPS := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := gta4lwifi
-PRODUCT_NAME := lineage_gta4lwifi
+PRODUCT_NAME := blaze_gta4lwifi
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-T500
 PRODUCT_MANUFACTURER := samsung
