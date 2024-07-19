@@ -26,6 +26,7 @@ $(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
 # # Inherit some common crDroid stuff
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_USES_PICO_GAPPS := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := gta4lwifi
