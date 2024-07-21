@@ -22,8 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, device/samsung/gta4lwifi/device.mk)
 
 # Inherit some common Infinity stuff.
-$(call inherit-product, vendor/infinity/config/common_full_tablet_wifionly.mk)
+$(call inherit-product, vendor/aosp/config/common_full_tablet_wifionly.mk)
 
+TARGET_USES_PICO_GAPPS := true
 # Whether you are compiling being an OFFICIAL Maintainer:
 INFINITY_BUILD_TYPE := UNOFFICIAL
 
@@ -38,7 +39,7 @@ USE_MOTO_CALCULATOR := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := gta4lwifi
-PRODUCT_NAME := infinity_gta4lwifi
+PRODUCT_NAME := aosp_gta4lwifi
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-T500
 PRODUCT_MANUFACTURER := samsung
