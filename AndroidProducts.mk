@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_gta4lwifi.mk
+    $(LOCAL_DIR)/aosp_gta4lwifi.mk
 
 COMMON_LUNCH_CHOICES := \
-    infinity_gta4lwifi-user \
-    infinity_gta4lwifi-userdebug \
-    infinity_gta4lwifi-eng
+    aosp_gta4lwifi-ap2a-user \
+    aosp_gta4lwifi-ap2a-userdebug \
+    aosp_gta4lwifi-ap2a-eng
