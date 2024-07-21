@@ -21,16 +21,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 # Inherit from gta4lwifi device
 $(call inherit-product, device/samsung/gta4lwifi/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
+# Inherit some common Infinity stuff.
+$(call inherit-product, vendor/infinity/config/common_full_tablet_wifionly.mk)
 
-# # Inherit some common crDroid stuff
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_USES_PICO_GAPPS := true
+# Whether you are compiling being an OFFICIAL Maintainer:
+INFINITY_BUILD_TYPE := UNOFFICIAL
+
+# Maintainer Name
+INFINITY_MAINTAINER := CuriousNom
+
+# Whether the compiled package ships ViMusic
+TARGET_BUILD_VIMUSIC := true
+
+# Whether the compiled package ships Moto Calculator irrespective VANILLA or GAPPS:
+USE_MOTO_CALCULATOR := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := gta4lwifi
-PRODUCT_NAME := lineage_gta4lwifi
+PRODUCT_NAME := infinity_gta4lwifi
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-T500
 PRODUCT_MANUFACTURER := samsung
